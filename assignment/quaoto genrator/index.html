@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .quote-box {
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 0 auto 20px;
+            background: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .quote {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .author {
+            font-size: 1.2rem;
+            color: #555;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            background: #007BFF;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        select {
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #333;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Random Quote Generator</h1>
+    <div class="quote-box">
+        <div class="quote" id="quote">Loading...</div>
+        <div class="author" id="author">-</div>
+    </div>
+    <select id="tags">
+        <option value="">All Categories</option>
+        <option value="inspirational">Inspirational</option>
+        <option value="life">Life</option>
+        <option value="love">Love</option>
+        <option value="wisdom">Wisdom</option>
+    </select>
+    <br>
+    <button id="new-quote">New Quote</button>
+
+    
+
+    </body>
+    </html>
+    <script src="Quote.js"></script>
